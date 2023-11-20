@@ -55,5 +55,5 @@ roscore
 ```
 2. Run the launch file:
 ```
-roslaunch demo.launch
+roslaunch mpu6050_esp_ros demo.launch
 ```
