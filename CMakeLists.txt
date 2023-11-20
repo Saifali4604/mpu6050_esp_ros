@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(mpu6050_serial_to_imu)
+project(mpu6050_esp_ros)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -43,10 +43,10 @@ include_directories(
 )
 
 ## Declare a C++ executable
-add_executable(mpu6050_serial_to_imu_node src/mpu6050_serial_to_imu_node.cpp)
+add_executable(mpu6050_esp_ros_node src/mpu6050_esp_ros_node.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(mpu6050_serial_to_imu_node
+target_link_libraries(mpu6050_esp_ros_node
   ${catkin_LIBRARIES}
 )
 
@@ -56,7 +56,7 @@ target_link_libraries(mpu6050_serial_to_imu_node
 
 
 ## Mark executables and/or libraries for installation
-install(TARGETS mpu6050_serial_to_imu_node
+install(TARGETS mpu6050_esp_ros_node
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
