@@ -55,5 +55,5 @@ roscore
 ```
 2. Run the launch file:
 ```
-roslaunch mpu6050_imu_driver mpu6050_imu.launch
+roslaunch demo.launch
 ```
