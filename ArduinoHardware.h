@@ -17,7 +17,8 @@ class ArduinoHardware
     {
       iostream = &Serial;
       #if defined(ESP8266) or defined(ESP32) or defined(ROSSERIAL_ARDUINO_TCP)
-	baud_ = 115200;
+	baud_ = 500000; 
+	//baud_=115200
       #else
         baud_ = 500000;
       #endif
