@@ -1,8 +1,8 @@
 <launch>
 
   <node pkg="mpu6050_esp_ros" type="mpu6050_esp_ros_node" name="mpu6050_serial_to_imu_node" required="true">
-    <param name="port" value="/dev/ttyUSB0"/>
-    <param name="baud" value="115200"/>
+    <param name="port" value="/dev/ttyACM0"/>
+    <param name="baud" value="500000"/>
   </node>
 
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mpu6050_esp_ros)/rviz/demo.rviz" required="true"/>
