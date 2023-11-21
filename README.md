@@ -22,7 +22,7 @@ Use the following commands to download and compile the package.
 
 ```
 cd ~/<work space>/src
-git clone https://github.com/Saifali4604/ros_mpu6050_arduino
+git clone https://github.com/Saifali4604/mpu6050_esp_ros
 ```
 Open your <work_space>/src/ros_mpu6050_arduino/ and copy "ros.h" and "Arduinohardware.h" and paste it in Arduino/libraries/ros_lib/
 
