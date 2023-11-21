@@ -56,7 +56,7 @@ void setup() {
       Fastwire::setup(400, true);
   #endif
 
-  Serial.begin(115200);
+  Serial.begin(500000);
   while (!Serial); // wait for Leonardo enumeration, others continue immediately
   Serial.println(F("Initializing I2C devices..."));
   mpu.initialize();
