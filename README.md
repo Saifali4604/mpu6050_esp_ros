@@ -21,15 +21,14 @@ create a libraries folder inside arduino folder and then
 Use the following commands to download and compile the package.
 
 ```
-cd ~/<work space>/src
-git clone https://github.com/Saifali4604/mpu6050_esp_ros
+mkdir -p ~/IMU/src
+cd ~/IMU/src
+git clone https://github.com/Saifali4604/mpu6050_esp_ros && rm -f Arduino/libraries/ros_lib/ros.h && rm -f Arduino/libraries/ros_lib/ArduinoHardware.h && cd IMU/src/ros_mpu6050_arduino/ && cp ros.h Arduino/libraries/ros_lib/ && cp Arduinohardware.h Arduino/libraries/ros_lib/
 ```
-Open your <work_space>/src/ros_mpu6050_arduino/ and copy "ros.h" and "Arduinohardware.h" and paste it in Arduino/libraries/ros_lib/
 
-[delete the previous file in that location]
 now open new terminal 
 ```
-cd <work space>
+cd ~/IMU
 catkin_make
 gedit ~/.bashrc
 ```
