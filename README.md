@@ -46,14 +46,15 @@ or
 ls -l /dev |grep ttyUSB
 sudo chmod 777 /dev/ttyUSB0
 ```
-**Note:** Always use Serial.begin(115200) in the code
+change the com port 
+```
+gedit ~/IMU/src/mpu6050_esp_ros/launch/demo.launch
+```
+
 
 ## Run the package
-1. Start the ROS master
-```
-roscore
-```
-2. Run the launch file:
+
+1. Run the launch file:
 ```
 roslaunch mpu6050_esp_ros demo.launch
 ```
