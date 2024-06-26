@@ -24,7 +24,8 @@ Use the following commands to download and compile the package.
 ```
 mkdir -p ~/IMU/src
 cd ~/IMU/src
-git clone https://github.com/Saifali4604/mpu6050_esp_ros && rm -f Arduino/libraries/ros_lib/ros.h && rm -f Arduino/libraries/ros_lib/ArduinoHardware.h && cd IMU/src/ros_mpu6050_arduino/ && cp ros.h Arduino/libraries/ros_lib/ && cp Arduinohardware.h Arduino/libraries/ros_lib/
+git clone https://github.com/Saifali4604/mpu6050_esp_ros && rm -f Arduino/libraries/ros_lib/ros.h && rm -f Arduino/libraries/ros_lib/ArduinoHardware.h && cd ~/IMU/src/mpu6050_esp_ros && cp ros.h ~/Arduino/libraries/ros_lib/ && cp ArduinoHardware.h ~/Arduino/libraries/ros_lib/
+
 ```
 
 now open new terminal 
