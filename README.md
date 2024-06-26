@@ -33,7 +33,7 @@ cd ~/IMU
 catkin_make
 gedit ~/.bashrc
 ```
-and paste ```source ~/< work_space >/devel/setup.bash``` at the last line
+and paste ```source ~/IMU/devel/setup.bash``` at the last line
 ## Arduino code
 Connect Your Arduino with mpu6050 board to your PC And upload the code given in this repository.
 **Download Mpu6050 lib by Electronicscat**(https://github.com/ElectronicCats/mpu6050)
