@@ -9,6 +9,7 @@
   sudo apt-get update
   sudo apt-get install ros-noetic-rosserial-arduino
   sudo apt-get install ros-noetic-rosserial
+  sudo apt-get install ros-noetic-serial
  ```
 create a libraries folder inside arduino folder and then
   ```
